@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | GameClaims</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">GameClaims</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <h2 style="text-align: center; margin-bottom: 2rem;">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card" onclick="openModal('inventory')">
+                <img src="images/inventory-system.jpg" alt="Inventory System">
+                <div class="project-info">
+                    <h3>Advanced Inventory System</h3>
+                    <p>Dynamic storage solution with drag-drop functionality</p>
+                    <div class="tech-tags">
+                        <span class="tech-item">Lua</span>
+                        <span class="tech-item">Roblox Studio</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card" onclick="openModal('ui-framework')">
+                <img src="images/ui-framework.jpg" alt="UI Framework">
+                <div class="project-info">
+                    <h3>Custom UI Framework</h3>
+                    <p>Modular interface system with 60 FPS optimization</p>
+                    <div class="tech-tags">
+                        <span class="tech-item">UI Design</span>
+                        <span class="tech-item">Animation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
